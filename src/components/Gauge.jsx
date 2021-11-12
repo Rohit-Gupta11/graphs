@@ -130,10 +130,13 @@ class Gauge extends React.Component {
                         borderWidth: 1,
                         formatter: '{value}%'
                     },
+                    animationEasing: 'circulaIn',
+                    animationDuration: 1500,
                     emphasis: {
                         itemStyle: {
-                            shadowColor: 'rgba(0, 0, 0, 0.5)',
-                            shadowBlur: 10
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
                         }
                     },
                 }

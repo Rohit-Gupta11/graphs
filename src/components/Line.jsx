@@ -31,7 +31,9 @@ class Line extends React.Component {
                     data: [150, 230, 224, 218, 135, 147, 260],
                     type: 'line'
                 }
-            ]
+            ],
+            animationEasing: 'circulaIn',
+            animationDuration: 1500,
         };
 
         chart.setOption(option);

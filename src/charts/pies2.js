@@ -13,7 +13,9 @@ export default {
             avoidLabelOverlap: false,
             itemStyle: {
                 borderColor: '#fff',
-                borderWidth: 2
+                borderWidth: 2,
+                shadowBlur: 1.5,
+                shadowColor: 'rgba(0,0,0,0.5)'
             },
             label: {
                 show: false,
@@ -22,8 +24,16 @@ export default {
             emphasis: {
                 label: {
                     show: false
+                },
+                itemStyle: {
+                    borderWidth: 4,
+                    shadowBlur: 10,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
                 }
             },
+            animationEasing: 'circulaIn',
+            animationDuration: 1500,
             labelLine: {
                 show: false
             },

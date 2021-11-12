@@ -14,17 +14,27 @@ export default {
       itemStyle: {
         borderRadius: 10,
         borderColor: '#fff',
-        borderWidth: 2
+        borderWidth: 2,
+        shadowBlur: 1.5,
+        shadowColor: 'rgba(0,0,0,0.5)'
       },
       label: {
         show: false,
         position: 'center'
       },
+      animationEasing: 'circulaIn',
+      animationDuration: 1500,
       emphasis: {
         label: {
           show: true,
           fontSize: '40',
           fontWeight: 'bold'
+        },
+        itemStyle: {
+          borderWidth: 4,
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
         }
       },
       labelLine: {
@@ -34,7 +44,7 @@ export default {
         { value: 1048, name: 'Productive' },
         { value: 735, name: 'Non Productive' },
         { value: 580, name: 'Neutral' },
-        { value: 484, name: 'Unstaged' },
+        { value: 484, name: 'Unstaged' }
       ]
     }
   ]

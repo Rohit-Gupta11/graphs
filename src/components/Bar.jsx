@@ -25,6 +25,9 @@ class Bar extends React.Component {
             dataShadow.push(yMax);
         }
         let option = {
+            tooltip: {
+                trigger: 'item'
+            },
             xAxis: {
                 data: dataAxis,
                 axisLabel: {
@@ -75,7 +78,9 @@ class Bar extends React.Component {
                             ])
                         }
                     },
-                    data: data
+                    data: data,
+                    animationEasing: 'circulaIn',
+                    animationDuration: 1500,
                 }
             ]
         };
