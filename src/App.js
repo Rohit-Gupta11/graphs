@@ -4,6 +4,7 @@ import Bar from './components/Bar.jsx';
 import Line from './components/Line.jsx';
 import Pie from './components/Pie.jsx';
 import Gauge from './components/Gauge.jsx';
+import Gauge2 from './components/Gauge2.jsx';
 import resizeObserver from './utils/resizeObserver';
 import pies from './charts/pies';
 import pies2 from './charts/pies2';
@@ -15,6 +16,12 @@ function App() {
             <h1>Graphs</h1>
             <div className="App" style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
                 <div style={{ width: "50%", height: 400 }}>
+                    <Gauge resizeObserver={resizeObserver} />
+                </div>
+                <div style={{ width: "50%", height: 400 }}>
+                    <Gauge2 resizeObserver={resizeObserver} />
+                </div>
+                <div style={{ width: "50%", height: 400 }}>
                     <Bar resizeObserver={resizeObserver} />
                 </div>
                 <div style={{ width: "50%", height: 400 }}>
@@ -25,9 +32,6 @@ function App() {
                 </div>
                 <div style={{ width: "50%", height: 400 }}>
                     <Pie option={pies2} resizeObserver={resizeObserver} />
-                </div>
-                <div style={{ width: "50%", height: 400 }}>
-                    <Gauge resizeObserver={resizeObserver} />
                 </div>
                 <div style={{ width: "50%", height: 400 }}>
                     <Line resizeObserver={resizeObserver} />
