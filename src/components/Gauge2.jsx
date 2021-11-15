@@ -49,9 +49,9 @@ class Gauge extends React.Component {
                 },
                 itemStyle: {
                     color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                        { offset: 0, color: '#fff1a0' },
-                        { offset: 0.5, color: '#fccb84' },
-                        { offset: 1, color: '#e08f21' }
+                        { offset: 0, color: 'yellow' },
+                        { offset: 0.5, color: 'orange' },
+                        { offset: 1, color: 'red' }
                     ])
                 }
             },

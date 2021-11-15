@@ -15,7 +15,7 @@ export default {
         borderRadius: 10,
         borderColor: '#fff',
         borderWidth: 2,
-        shadowBlur: 1.5,
+        shadowBlur: 6,
         shadowColor: 'rgba(0,0,0,0.5)'
       },
       label: {
@@ -31,8 +31,8 @@ export default {
           fontWeight: 'bold'
         },
         itemStyle: {
-          borderWidth: 4,
-          shadowBlur: 10,
+          borderWidth: 6,
+          shadowBlur: 20,
           shadowOffsetX: 0,
           shadowColor: 'rgba(0, 0, 0, 0.5)'
         }

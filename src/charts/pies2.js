@@ -14,7 +14,7 @@ export default {
             itemStyle: {
                 borderColor: '#fff',
                 borderWidth: 2,
-                shadowBlur: 1.5,
+                shadowBlur: 6,
                 shadowColor: 'rgba(0,0,0,0.5)'
             },
             label: {
@@ -26,11 +26,11 @@ export default {
                     show: false
                 },
                 itemStyle: {
-                    borderWidth: 4,
-                    shadowBlur: 10,
+                    borderWidth: 6,
+                    shadowBlur: 20,
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
-                }
+                  }
             },
             animationEasing: 'circulaIn',
             animationDuration: 1500,
