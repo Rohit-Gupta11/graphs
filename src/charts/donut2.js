@@ -30,7 +30,7 @@ export default {
                     shadowBlur: 20,
                     shadowOffsetX: 0,
                     shadowColor: 'rgba(0, 0, 0, 0.5)'
-                  }
+                }
             },
             animationEasing: 'circulaIn',
             animationDuration: 1500,
