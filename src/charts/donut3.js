@@ -8,7 +8,8 @@ export default {
     },
     series: [
         {
-            width: '50%',
+            width: '70%',
+            right: 'center',
             type: 'pie',
             radius: ['40%', '70%'],
             // avoidLabelOverlap: false,

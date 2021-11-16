@@ -9,6 +9,8 @@ export default {
     series: [
         {
             type: 'pie',
+            right: 'center',
+            width: '70%',
             radius: ['40%', '70%'],
             avoidLabelOverlap: false,
             itemStyle: {
