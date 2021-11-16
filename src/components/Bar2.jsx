@@ -19,11 +19,6 @@ class Bar2 extends React.Component {
         }
         let dataAxis = ['Leap Max', 'Leap Generation', 'Knowmax', 'Kochar soft', 'Marketing', 'Payroll & Compliance', 'Product', 'Selfcare', 'Social', 'Training'];
         let data = [55, 46, 24, 88, 19, 47, 92, 29, 60, 60];
-        let yMax = 100;
-        let dataShadow = [];
-        for (let i = 0; i < data.length; i++) {
-            dataShadow.push(yMax);
-        }
         let option = {
             tooltip: {
                 trigger: 'item'
@@ -54,11 +49,6 @@ class Bar2 extends React.Component {
                     color: '#999'
                 }
             },
-            dataZoom: [
-                {
-                    type: 'inside'
-                }
-            ],
             series: [
                 {
                     type: 'bar',
@@ -87,18 +77,6 @@ class Bar2 extends React.Component {
         };
 
         chart.setOption(option);
-
-        // Enable data zoom when user click bar.
-        const zoomSize = 6;
-        chart.on('click', function (params) {
-            console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-            chart.dispatchAction({
-                type: 'dataZoom',
-                startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-                endValue:
-                    dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-            });
-        });
     }
 
     render() {

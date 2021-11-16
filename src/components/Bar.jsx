@@ -28,11 +28,6 @@ class Bar extends React.Component {
                 ])
             }
         }, 191, 234];
-        let yMax = 500;
-        let dataShadow = [];
-        for (let i = 0; i < data.length; i++) {
-            dataShadow.push(yMax);
-        }
         let option = {
             tooltip: {
                 trigger: 'item'
@@ -61,11 +56,6 @@ class Bar extends React.Component {
                     color: '#999'
                 }
             },
-            dataZoom: [
-                {
-                    type: 'inside'
-                }
-            ],
             series: [
                 {
                     type: 'bar',
@@ -78,18 +68,6 @@ class Bar extends React.Component {
         };
 
         chart.setOption(option);
-
-        // Enable data zoom when user click bar.
-        const zoomSize = 2;
-        chart.on('click', function (params) {
-            console.log(dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)]);
-            chart.dispatchAction({
-                type: 'dataZoom',
-                startValue: dataAxis[Math.max(params.dataIndex - zoomSize / 2, 0)],
-                endValue:
-                    dataAxis[Math.min(params.dataIndex + zoomSize / 2, data.length - 1)]
-            });
-        });
     }
 
     render() {
