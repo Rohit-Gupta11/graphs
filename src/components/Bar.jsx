@@ -18,7 +18,11 @@ class Bar extends React.Component {
             this.props.resizeObserver.observe(this.myChart.current);
         }
         let dataAxis = ['Productive', 'Non Productive', 'Neutral', 'Unstaged'];
-        let data = [220, {
+        let data = [{
+            value: 220, itemStyle: {
+                color: '#6ECB63'
+            }
+        }, {
             value: 182,
             itemStyle: {
                 color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
@@ -27,7 +31,14 @@ class Bar extends React.Component {
                     { offset: 1, color: 'yellow' }
                 ])
             }
-        }, 191, 234];
+        }, {
+            value: 191, itemStyle: {
+                color: '#3D56B2'
+            }
+        }, {
+            value: 234, itemStyle: {
+                color: '#FFB319'
+            }}];
         let option = {
             tooltip: {
                 trigger: 'item'
