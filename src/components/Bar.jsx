@@ -18,7 +18,16 @@ class Bar extends React.Component {
             this.props.resizeObserver.observe(this.myChart.current);
         }
         let dataAxis = ['Productive', 'Non Productive', 'Neutral', 'Unstaged'];
-        let data = [220, 182, 191, 234];
+        let data = [220, {
+            value: 182,
+            itemStyle: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    { offset: 0, color: 'red' },
+                    { offset: 0.5, color: 'orange' },
+                    { offset: 1, color: 'yellow' }
+                ])
+            }
+        }, 191, 234];
         let yMax = 500;
         let dataShadow = [];
         for (let i = 0; i < data.length; i++) {
@@ -31,8 +40,7 @@ class Bar extends React.Component {
             xAxis: {
                 data: dataAxis,
                 axisLabel: {
-                    inside: true,
-                    color: '#fff'
+                    inside: false,
                 },
                 axisTick: {
                     show: false
@@ -62,22 +70,6 @@ class Bar extends React.Component {
                 {
                     type: 'bar',
                     showBackground: true,
-                    itemStyle: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                            { offset: 0, color: '#83bff6' },
-                            { offset: 0.5, color: '#188df0' },
-                            { offset: 1, color: '#188df0' }
-                        ])
-                    },
-                    emphasis: {
-                        itemStyle: {
-                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-                                { offset: 0, color: '#2378f7' },
-                                { offset: 0.7, color: '#2378f7' },
-                                { offset: 1, color: '#83bff6' }
-                            ])
-                        }
-                    },
                     data: data,
                     animationEasing: 'circulaIn',
                     animationDuration: 1500,
