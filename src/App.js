@@ -41,11 +41,11 @@ function App() {
                     <Pie option={donut3} resizeObserver={resizeObserver} />
                 </div>
                 <div style={{ width: "49%", height: 600, marginBottom: 200, border: "1px solid #f1f1f1" }}>
-                    <h1 style={{ textAlign: "center" }}>Donut Chart 2</h1>
+                    <h1 style={{ textAlign: "center" }}>Pie Chart 1</h1>
                     <Pie option={pie} resizeObserver={resizeObserver} />
                 </div>
                 <div style={{ width: "49%", height: 600, marginBottom: 200, border: "1px solid #f1f1f1" }}>
-                    <h1 style={{ textAlign: "center" }}>Donut Chart 3</h1>
+                    <h1 style={{ textAlign: "center" }}>Pie Chart 2</h1>
                     <Pie option={pie2} resizeObserver={resizeObserver} />
                 </div>
                 <div style={{ width: "49%", height: 600, marginBottom: 200, border: "1px solid #f1f1f1" }}>
