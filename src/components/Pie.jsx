@@ -19,6 +19,10 @@ class Pie extends React.Component {
         }
 
         chart.setOption(this.props.option);
+
+        chart.on('click', function (params) {
+            console.log(params);
+        });
     }
 
     render() {
