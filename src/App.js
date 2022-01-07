@@ -3,6 +3,7 @@ import Bar2 from './components/Bar2.jsx';
 import Bar from './components/Bar.jsx';
 import Line from './components/Line.jsx';
 import Pie from './components/Pie.jsx';
+import Pie2 from './components/Pie2.jsx';
 import Gauge from './components/Gauge.jsx';
 import Gauge2 from './components/Gauge2.jsx';
 import resizeObserver from './utils/resizeObserver';
@@ -65,6 +66,9 @@ function App() {
                 </div>
                 <div style={{ width: "49%", height: 600, marginBottom: 200, border: "1px solid #f1f1f1" }}>
                     <Line resizeObserver={resizeObserver} />
+                </div>
+                <div style={{ width: "49%", height: 600, marginBottom: 200, border: "1px solid #f1f1f1" }}>
+                    <Pie2/>
                 </div>
             </div>
         </div>
