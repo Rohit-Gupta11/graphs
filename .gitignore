@@ -1,2 +1,8 @@
 /node_modules
 .vscode
+
+src/components/Tracker.jsx
+
+src/components/Tracker2.jsx
+
+src/charts/test.js
