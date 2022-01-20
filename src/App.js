@@ -72,7 +72,7 @@ function App() {
                     <Pie2/>
                 </div> */}
                 <div style={{ width: "49%", height: 600, marginBottom: 200, border: "1px solid #f1f1f1" }}>
-                    <h1 style={{ textAlign: "center" }}>Pie Chart 3 (with gradient)</h1>
+                    <h1 style={{ textAlign: "center" }}>Pie Chart 4 (with slice effect)</h1>
                     <Pie option={pie4} resizeObserver={resizeObserver} />
                 </div>
             </div>
